@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="viewport" content="width=device-width">
+		<title>SellerKit Documentation</title>
+		<base href=''>
+		<link href='style.css' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="content-root">
+			<div class="menubar fixed">
+				<div class="menu section">
+					<ul>
+						<li id="root-item" class="level-0">
+							<ul class="level-1" id="root-list">
+								<li id="installation-item" class="level-1"><a id="installation-link" href="#installation" class="level-1">Installation</a></li>
+								<li id="content-item" class="level-1"><a id="content-link" href="#content" class="level-1">Content Management</a>
+									<ul class="level-2">
+										<li class="level-2"><a href="#language" class="level-2">Translation</a></li>
+										<li class="level-2"><a href="#backup" class="level-2">Backup & restore</a></li>
+									</ul>
+								</li>
+								<li id="templating-item" class="level-1"><a id="templating-link" href="#templating" class="level-1">Customization</a>
+									<ul class="level-2">
+										<li class="level-2"><a href="#menus" class="level-2">Menus</a></li>
+										<li class="level-2"><a href="#themes" class="level-2">Themes</a></li>
+										<li class="level-2"><a href="#builder" class="level-2">Builder</a></li>
+									</ul>
+								</li>
+								<li id="functions-item" class="level-1"><a id="functions-link" href="#functions" class="level-1">Functions</a>
+									<ul class="level-2">
+										<li class="level-2"><a href="#mailing-function" class="level-2">E-mail</a></li>
+										<li class="level-2"><a href="#path-function" class="level-2">Path</a></li>
+										<li class="level-2"><a href="#image_order-function" class="level-2">Image order</a></li>
+										<li class="level-2"><a href="#string_cut-function" class="level-2">String cut</a></li>
+										<li class="level-2"><a href="#getOS-function" class="level-2">Operating system</a></li>
+										<li class="level-2"><a href="#getBrowser-function" class="level-2">Browser</a></li>
+										<li class="level-2"><a href="#getReferrer-function" class="level-2">Referrer</a></li>
+										<li class="level-2"><a href="#getCountry-function" class="level-2">Country</a></li>
+										<li class="level-2"><a href="#timegap-function" class="level-2">time difference</a></li>
+										<li class="level-2"><a href="#percentage-function" class="level-2">Percentage</a></li>
+										<li class="level-2"><a href="#currency-function" class="level-2">Currency</a></li>
+										<li class="level-2"><a href="#country-function" class="level-2">Country name</a></li>
+										<li class="level-2"><a href="#status-function" class="level-2">Order status</a></li>
+										<li class="level-2"><a href="#translate-function" class="level-2">Translation</a></li>
+										<li class="level-2"><a href="#customer-function" class="level-2">Customer data</a></li>
+									</ul>
+								</li>
+								<li id="api-item" class="level-1"><a id="api-link" href="#api" class="level-1">api</a>
+									<ul class="level-2">
+										<li class="level-2"><a href="#register-api" class="level-2">Register</a></li>
+										<li class="level-2"><a href="#login-api" class="level-2">Login</a></li>
+										<li class="level-2"><a href="#account-api" class="level-2">Account</a></li>
+										<li class="level-2"><a href="#products-api" class="level-2">Products</a></li>
+										<li class="level-2"><a href="#posts-api" class="level-2">Posts</a></li>
+										<li class="level-2"><a href="#wish-api" class="level-2">Add to wishlist</a></li>
+										<li class="level-2"><a href="#add-api" class="level-2">Add to cart</a></li>
+										<li class="level-2"><a href="#cart-api" class="level-2">Cart</a></li>		
+										<li class="level-2"><a href="#checkout-api" class="level-2">Checkout</a></li>
+										<li class="level-2"><a href="#payment-api" class="level-2">Payment</a></li>		
+										<li class="level-2"><a href="#pay-api" class="level-2">Payment processing</a></li>
+										<li class="level-2"><a href="#review-api" class="level-2">Review</a></li>		
+										<li class="level-2"><a href="#coupon-api" class="level-2">Coupon</a></li>	
+										<li class="level-2"><a href="#subscribe-api" class="level-2">Subscribe</a></li>
+										<li class="level-2"><a href="#orders-api" class="level-2">Orders</a></li>
+										<li class="level-2"><a href="#reviews-api" class="level-2">Reviews</a></li>
+									</ul>
+								</li>
+								<li id="licenses-item" class="level-1"><a id="licenses-link" href="#licenses" class="level-1">Licenses</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<h2>Thank you</h2>
+				<p>Thank you for purchasing this software. As I said at the beginning, I'd be glad to help you if you have any questions relating to this software. I'll do my best to assist. If you have a more general question relating to softwares on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+				<h1 id="installation">Installation</h1>
+				<p>
+					For the application to function correctly PHP version 5.6.4 or newer is required and a MySQL 5.2 or newer database. Browsers starting with IE9 and newer are supported. 
+					<br/>
+					After downloading all the files, copy and upload the "SellerKit" directory anywhere on your web server (for example to the root directory of your website). "SellerKit" folder contains all of the necessary files (configuration, scripts, data and resources). 
+					<br/>
+					Note that files/directories should be both readable and writable by PHP.
+					to run installation wizard visit your installation directory , when application is accessed for the first time, you will be redirected to the installation wizard (or go directly to yourwebsite.com/install).
+					<br/>
+					The application will check the php version , the mail() function , mod_rewrite , short tags , safe_mod , mbstring , curl and mysqli . please check these requirements before install .
+					<br/>
+					If all requirements are available , you'll be able to continue installation . Now you should create your database using your favourite  database administration tool ( phpMyAdmin ...)
+					<br/>
+					If the database hostname isn't provided by your hosting , try localhost or request it from your hosting provider
+					<br/>
+					Then click "continue" , after a successful connection to database you'll be able to insert your site settings (all fields are required) and enter your admin login informations .
+					<br/>
+					After installation you'll be able to access your website and admin area !
+				</p>
+				<h1 id="content">Content Management </h1>
+				<p>You can add , edit or delete content on your website in the admin panel .
+					<br/>
+					To add content , select it from navigation menu , and click on the rounded right-top button .
+					<br/>
+					To edit content click on the pencil icon .
+					<br/>
+					To delete content click on the trash icon .
+					<br/>
+					<i>You can't add / delete some content like e-mail templates , but you can edit them .</i>
+				</p>
+				<h4  id="language">Translation</h4>
+				<p>SellerKit allow you to build your site in your language directly in your admin panel , and it comes with French language built-in .<br/>To add your language simply click on add language in Language section , and fill required fields : language name & code ( e.g : en ) , then visit your site and select your language from the header , now click on your language name in the admin panel and insert translated words in the text field and click the little check mark .</p>
+				<h4  id="backup">Backup & restore</h4>
+				<p>You can backup your site via the admin panel , click on the "export" link in the menu and choose what you want to backup ( Database or files ) , then the backup will be downloaded instantly .<br/> To restore your files simply upload your backup and extract it in the application folder .<br/>To restore your database go to your favourite  database administration tool ( phpMyAdmin ...) , select your database and click import then select the downloaded sql file !</p>
+				<h1 id="templating">Customization</h1>
+				<p>This app is highly customizable letting you build anything using our incredible easy to use page builder or our theme editor directly inside your admin panel .<br/>
+				To customize theme colors , change the homepage media file or add custom js and css go to the theme settings in the admin panel .</p>
+				<h4  id="menus">Menus</h4>
+				<p>
+					A large majority of users want custom menus , this why we created an easy to use drag and drop menu builder , to edit your menu click on the "Main menu" or "Footer menu" section in the admin panel menu , and create your menu items (link and url) , then you can use the drag and drop menu builder to re-order them .
+				</p>
+				<h4  id="themes">Themes</h4>
+				<p>
+					Themes can provide much more control over the look and presentation of the material on your website, and you can edit your template by using the built-in template editor , or navigate to <code>resources/views</code> and choose a file to edit .<br/>
+				</p>
+				<h4  id="builder">Builder</h4>
+					<p>You can also use the drag-n-drop builder to edit your website components (called blocs) .
+					Simply select the builder from the menu and select a page under the title , then add a block ( you can insert html code ) click add block and re-order it using the drag and drop functionality , then click save .
+					<br/> to add php code , use widgets that can be developed by following these 4 simple steps :
+					<ul>
+						<li>Save your php file in <code>resources/views/widgets</code> folder .</li>
+						<li>Go to the builder in admin panel , choose a page and click on add a new bloc</li>
+						<li>Put : <code>widget:*widget_name*.php</code> in the content field and save the bloc</li>
+						<li>Delete cache and refresh the page !</li>
+					</ul>
+					<br/>
+				</p>
+				<h1 id="functions">Functions</h1>
+				<p>We have created the following functions to help you with your developement process and to avoid code repetition , The source code can be found in <code>functions.php</code></p>
+				<h4  id="mailing-function">mailing()</h4>
+				<p>
+					Send e-mails from your website with custom templates .<br/>
+					<code>mailing($template,$array,$subject,$to)</code><br/>
+					$template : E-mail template.<br/>
+					$array : Variables for email template.<br/>
+					$subject : E-mail Subject.<br/>
+					$to : E-mail receiver.
+				</p>
+				<h4  id="path-function">path()</h4>
+				<p>
+					Generate url from id and string<br/>
+					<code>path($str,$id = false)</code><br/>
+					$str : String.<br/>
+					$id : Item ID to be prepended.
+				</p>
+				<h4  id="image_order-function">image_order()</h4>
+				<p>
+					Get the first image (for products)<br/>
+					<code>image_order($string, $order = 0)</code><br/>
+					$string : Product images.<br/>
+					$order : Image order.
+				</p>
+				<h4  id="string_cut-function">string_cut()</h4>
+				<p>
+					Cutting strings with text append <br/>
+					<code>string_cut($text, $length = 100,$end = '')</code><br/>
+					$text : Text to be cutted.<br/>
+					$length : Length of the output.<br/>
+					$end : Text to be appended.
+				</p>
+				<h4  id="getOS-function">getOS()</h4>
+				<p>
+					Get user operation system <br/>
+					<code>getOS()</code>
+				</p>
+				<h4  id="getBrowser-function">getBrowser()</h4>
+				<p>
+					Get user Browser <br/>
+					<code>getBrowser()</code>
+				</p>
+				<h4  id="getReferrer-function">getReferrer()</h4>
+				<p>
+					Get user Referrer <br/>
+					<code>getReferrer()</code>
+				</p>
+				<h4  id="getCountry-function">getCountry()</h4>
+				<p>
+					Get user Country <br/>
+					<code>getCountry()</code>
+				</p>
+				<h4  id="timegap-function">timegap()</h4>
+				<p>
+					Get Time difference between current timestamp and the provided one <br/>
+					<code>timegap($old,$level = 0)</code><br/>
+					$old : The compared time.<br/>
+					$level : Time level.
+				</p>
+				<h4  id="percentage-function">percentage()</h4>
+				<p>
+					Percentage change between two numbers <br/>
+					<code>percentage($old, $new)</code><br/>
+					$old : The old figure.<br/>
+					$new : The new figure.
+				</p>
+				<h4  id="currency-function">currency()</h4>
+				<p>
+					Add currency to a price <br/>
+					<code>currency($price)</code><br/>
+					$price : price.
+				</p>
+				<h4  id="country-function">country()</h4>
+				<p>
+					Returns country name from an iso code <br/>
+					<code>country($iso)</code><br/>
+					$iso : Country iso code.
+				</p>
+				<h4  id="status-function">status()</h4>
+				<p>
+					Order status from status ID <br/>
+					<code>status($i)</code><br/>
+					$i : Satus ID.
+				</p>
+				<h4  id="translate-function">translate()</h4>
+				<p>
+					Return translation of a word from database <br/>
+					<code>translate($word)</code><br/>
+					$word : Word to be translated.
+				</p>
+				<h4  id="customer-function">customer()</h4>
+				<p>
+					Get current customer data <br/>
+					<code>customer($info)</code><br/>
+					$info : The information to be retrieved.
+				</p>
+				<h2 id="api">API Reference</h2>
+				<p>SellerKit provide very powerful and organized <strong>API</strong> using HTTP response , allowing you to interact securely with your website API from a client-side web application .
+					<br/> Api response can be plain text or in JSON format .
+					<br/> All API requests can be made over HTTPS or HTTP.
+					<br/>
+					<i>Please change example.com to your website url</i>
+				</p>
+				<h4  id="register-api">Register</h4>
+				<p>
+					Add a customer to your database
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/register</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>name</b> : Customer name</li>
+						<li><b>email</b> : Email address</li>
+						<li><b>password</b> : Password</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+						"error": <span class="comment"> // Error message </span>
+					}
+					or
+					{
+						"success": <span class="comment"> // Success message </span>
+					}
+				</code></pre>
+				<h4  id="login-api">Login</h4>
+				<p>
+					Get the token of the customer
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/login</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>email</b> : Email address</li>
+						<li><b>password</b> : Password</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+						"error": <span class="comment"> // Error message </span>
+					}
+					or
+					{
+						"success": <span class="comment"> // Success message </span>
+						"sid": <span class="comment"> // User token </span>
+					}
+				</code></pre>
+				<h4  id="account-api">account</h4>
+				<p>
+					Get user informations and orders
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/account</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>sid</b> : Secure id ( returned after login )</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+					  "id": <span class="comment"> // Customer ID </span>
+					  "name": <span class="comment"> // Customer Name </span>
+					  "email": <span class="comment"> // Customer Email </span>
+					  "orders": {
+						"1": {
+						  "id": <span class="comment"> // Order ID </span>
+						  <span class="comment"> // Order fields like name and email </span>
+						  "products": [
+							{
+							  "title": <span class="comment"> // Product name </span>
+							  "quantity": <span class="comment"> // Product quantity </span>
+							  "price": <span class="comment"> // Product price </span>
+							  "options": [
+								{
+								  "title": <span class="comment"> // Option title </span>
+								  "value": <span class="comment"> // Option value </span>
+								}
+							  ]
+							}
+						  ],
+						  "discount": {
+							"discount": <span class="comment"> // Discount amount </span>
+							"type": <span class="comment"> // % or $ </span>
+						  },
+						  "shipping": <span class="comment"> // Shipping cost </span>
+						  "total": <span class="comment"> // Total amount </span>
+						  "payment": {
+							<span class="comment"> // Payment details </span>
+						  }
+						}
+					  }
+					}
+				</code></pre>
+				<h4  id="products-api">Products</h4>
+				<p>
+					Get products list based on multiple parameters .
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/products</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>search</b> : Search query</li>
+						<li><b>cat</b> : Category</li>
+						<li><b>min</b> : Minimum price</li>
+						<li><b>max</b> : Maximum price</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+						"products": [
+							{
+							"id": <span class="comment"> // Product ID </span> ,
+							"images": <span class="comment"> // Full product image path </span>,
+							"title": <span class="comment"> // Product name </span>,
+							"text": <span class="comment"> // truncated product description </span>,
+							"path": <span class="comment"> // Product URL </span>,
+							"price": <span class="comment"> // Product price </span>
+							}
+						]
+					}
+				</code></pre>
+				<h4  id="posts-api">Posts</h4>
+				<p>
+					Get blog posts list based on multiple parameters .
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/posts</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>search</b> : Search query</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+					"posts": [
+					{
+					"id": <span class="comment"> // Post ID </span> ,
+					"image": <span class="comment"> // Full post image path </span>,
+					"title": <span class="comment"> // Post title </span>,
+					"content": <span class="comment"> // truncated post content </span>,
+					"path": <span class="comment"> // Post URL </span>,
+					"time": <span class="comment"> // time difference (ago) </span>
+					"timestamp": <span class="comment"> // Post timestamp </span>
+					}
+					]
+					}
+				</code></pre>
+				<h4 id="add-api">Add to cart</h4>
+				<p>
+					Add product to user cart . Cart items are saved in <code>cart</code> cookie 
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/add</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>id</b> : product id (required)</li>
+						<li><b>q</b> : quantity (default = 1)</li>
+						<li><b>(options ...)</b> : product options (default = empty)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					updated <span class="comment"> // Product already added , quantity updated </span>
+					success <span class="comment"> // Product successfully added to cart </span>
+					unavailable <span class="comment"> // Quantity more than available stock </span>
+				</code></pre>
+				<h4 id="wish-api">Add to wishist</h4>
+				<p>
+					Add product to user wishlist . Cart items are saved in <code>wishlist</code> cookie 
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/wish</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>id</b> : product id (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					Added successfully <span class="comment"> // Product added to the wishlist </span>
+					Removed successfully <span class="comment"> // Product removed from the wishlist </span>
+				</code></pre>
+				<h4  id="cart-api">Cart items</h4>
+				<p>
+					Get Cart items saved in <code>cart</code> cookie
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/cart</code>
+				</p>
+				<pre><code class="lang-js">
+					{
+					"count": <span class="comment"> // Number of products </span>,
+					"header": <span class="comment"> // Cart header (html format) </span>,
+					"products": [
+				    {
+					"id": <span class="comment"> // Product ID </span>,
+					"images": <span class="comment"> // Image name in assets directory </span>,
+					"title": <span class="comment"> // Product name </span>,
+					"price": <span class="comment"> // Unit price </span>,
+					"quantity": <span class="comment"> // Quantity selected </span>,
+					"options": <span class="comment"> // Product options </span>,
+					"total": <span class="comment"> // Total price </span>
+				    }
+					],
+					"coupon": <span class="comment"> // Coupon apply form (html format) </span> 
+					}
+				</code></pre>
+				<h4  id="checkout-api">Checkout</h4>
+				<p>
+					Returns form to be filled with user details to create the order
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/checkout</code>
+				</p>
+				<pre><code class="lang-js">
+					{
+					"0": <span class="comment"> // A form components (html format) </span>,
+					"1": <span class="comment"> // Another form components (html format) </span>,
+					...
+					"header": <span class="comment"> // Checkout header (html format)  </span> 
+					}
+				</code></pre>
+				<h4  id="payment-api">Payment methods</h4>
+				<p>
+					Show available payment methods
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/payment</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>(form)</b> : checkout form data (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+					{
+					"header": <span class="comment"> // Payment header (html format) </span>,
+					"error": <span class="comment"> // Will return true if there's an error </span>,
+					"message": <span class="comment"> // Type of error (html format) </span>,
+					
+					"0": <span class="comment"> // A payment method (html format) </span>,
+					"1": <span class="comment"> // Another payment method (html format) </span>,
+					}
+				</code></pre>
+				<h4 id="pay-api">Payment processing</h4>
+				<p>
+					Submits payment details to server to validate and mark order as paid !
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/pay</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>order</b> : order ID (required)</li>
+						<li><b>method</b> : payment method (ex : Stripe) (required)</li>
+						<li><b>(details)</b> : payment details (ex : StripeToken) (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					errors :
+					Invalid parameters <span class="comment"> // Order or method not provided </span>,
+					Invalid method <span class="comment"> // Method dosen't exist </span>,
+					Method inactive <span class="comment"> // Method Is not active </span>,
+					Invalid order <span class="comment"> // Order dosen't exist </span>,
+					success :
+					"header": <span class="comment"> // Checkout header (html format)  </span> 
+					"0": <span class="comment"> // Content (html format)  </span> 
+				</code></pre>
+				<h4  id="review-api">Review</h4>
+				<p>
+					Submits product review to server
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/review</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>id</b> : Product id (required)</li>
+						<li><b>email</b> : User email (required)</li>
+						<li><b>name</b> : User name (required)</li>
+						<li><b>rating</b> : Product rating (required)</li>
+						<li><b>review</b> : Product review (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					errors :
+					All fields are required
+					success :
+					success
+				</code></pre>
+				<h4  id="coupon-api">Coupon</h4>
+				<p>
+					Check coupon validity and save it for checkout .
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/coupon</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>code</b> : Coupon code (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					errors :
+					invalid
+					success :
+					success
+				</code></pre>
+				<h4  id="subscribe-api">Subscribe</h4>
+				<p>
+					Add email to newsletter subscribers .
+				</p>
+				<br/>
+				<p>
+					<code>POST http://example.com/api/subscribe</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>email</b> : User email (required)</li>
+					</ul>
+				</p>
+				<pre><code class="lang-generic">
+					errors :
+					Already subscribed
+					success :
+					successfully subscribed
+				</code></pre>
+				
+				<h4  id="orders-api">Orders</h4>
+				<p>
+					Get orders list.
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/orders</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>token</b> : API token ( required )</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+				{
+					"orders": [
+					{
+					"id": <span class="comment"> // Order ID </span> ,
+					"field codes": <span class="comment"> // field values </span>,
+					...
+					"products": {
+					    0 : {
+					        "id": <span class="comment"> // Product id </span>,
+					        "title": <span class="comment"> // Product name </span>,
+					        "price": <span class="comment"> // Product price </span>,
+					        "quantity": <span class="comment"> // Product quantity </span>,
+					        "total": <span class="comment"> // Total price * quantity </span>,
+					    },
+					    ...
+					}
+					"coupon": <span class="comment"> // Order coupon </span>,
+					"total": <span class="comment"> // Order total </span>
+					}
+					]
+				}
+				</code></pre>
+				<h4  id="reviews-api">Reviews</h4>
+				<p>
+					Get reviews list.
+				</p>
+				<br/>
+				<p>
+					<code>GET http://example.com/api/reviews</code>
+					<br/> Parameters :
+					<ul>
+						<li><b>token</b> : API token ( required )</li>
+					</ul>
+				</p>
+				<pre><code class="lang-js">
+				{
+					"reviews": [
+					{
+					"id": <span class="comment"> // Review ID </span> ,
+					"name": <span class="comment"> // Reviewer name </span>,
+					"email": <span class="comment"> // Reviewer email </span>,
+					"rating": <span class="comment"> // Reviewer rating </span>,
+					"review": <span class="comment"> // Reviewer review </span>,
+					"time": <span class="comment"> // time difference (ago) </span>,
+					"timestamp": <span class="comment"> // Review timestamp </span>,
+					}
+					]
+				}
+				</code></pre>
+				<h2 id="older_sellerkit">For SellerKit 3.1 or older</h2>
+				<p>
+				    The geolocation API we used in previous versions was apparently acquired/merged into another company, and it became a freemium product (you'll need to pay if the API hits reach 10,000), and they deprecated the old free API and broke all websites running SellerKit 3.1 or older unfortunately.<br>
+				    Update: in August we have introduced our own Geolocation API with a fallback feature to prevent future downtimes.
+					<pre>
+To fix this, you'll need to change the following function 
+(in the "app/Functions.php" file):
+
+...
+function getCountry() {
+	...
+}
+...
+
+To:
+
+...
+function getCountry() {
+	if (empty($_COOKIE['country'])) {
+		$ch = curl_init('http://api.miniapps.design/?ip='.request()->ip().'&url='.env('APP_URL'));
+		curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+		$json = '';
+		if (($json = curl_exec($ch)) !== false) {
+			if (!empty(json_decode($json,true)['country']['code'])){
+				$country = json_decode($json,true)['country']['code'];
+			} else {
+				$country = 'US';
+			}
+			setcookie("country",$country,time()+2592000);
+		} else {
+			$country = 'US';
+		}
+		curl_close($ch);
+	} else {
+		$country = $_COOKIE['country'];
+	}
+	return $country;
+}
+...
+                    </pre>
+					
+				</p>
+				<h2 id="licenses">Licenses and Credits</h2>
+				
+				<p>We have used the following open-source softwares , images or other files as listed :</p>
+				<ul>
+					<li><a href="https://raw.githubusercontent.com/jquery/jquery/master/LICENSE.txt">JQuery & JQuery UI</a> 1.12.4 - 1.10.4</li>
+					<li><a href="https://raw.githubusercontent.com/twbs/bootstrap/master/LICENSE">Bootstrap</a> 3.3.7</li>
+					<li><a href="https://raw.githubusercontent.com/balupton/jquery-history/master/LICENSE.txt">JQuery History</a> 1.8</li>
+					<li><a href="https://raw.githubusercontent.com/leongersen/noUiSlider/master/LICENSE">noUI Slider</a> 9.2</li>
+					<li><a href="https://www.gnu.org/licenses/gpl-2.0.html">Flex slider</a> 2.6.3</li>
+					<li><a href="https://raw.githubusercontent.com/HubSpot/pace/master/LICENSE">Pace</a> 1.0.0</li>
+					<li><a href="https://raw.githubusercontent.com/manifestinteractive/jqvmap/master/LICENSE">JQuery Vmap</a> 1.5.1</li>
+					<li><a href="https://github.com/chartjs/Chart.js/blob/master/LICENSE.md">Chart.js</a> 2.4.0</li>
+					<li><a href="http://www.opensource.org/licenses/mit-license.php">Slimscroll</a> 1.3.1</li>
+					<li><a href="http://www.opensource.org/licenses/mit-license.php">Flatdoc</a> 0.9.0</li>
+					<li><a href="https://github.com/irfan/jquery-star-rating">JQuery rating</a> 0.3b</li>
+					<li><a href="https://github.com/MattWilcox/Adaptive-Images">Adaptive Images</a> 1.5.2</li>
+					<li><a href="http://graphicburger.com/license/">Icons font</a></li>
+					<li><a href="https://unsplash.com/license">Blog Images</a></li>
+					<li><a href="http://pixel-fabric.com/24-clothes-icons-20">Product Images</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>
